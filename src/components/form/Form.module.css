@@ -1,0 +1,42 @@
+.form {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.form button {
+  background-color: hsl(238, 40%, 52%);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.form img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.top {
+  margin-bottom: 1rem;
+}
+
+.btnTop {
+  display: none;
+}
+
+.top textarea {
+  padding: 1rem;
+  width: 100%;
+  outline: none;
+}
+
+.btm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

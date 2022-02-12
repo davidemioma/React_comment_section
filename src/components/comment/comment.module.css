@@ -1,0 +1,146 @@
+.comment {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.body {
+  margin-bottom: 1.5rem;
+}
+
+.body p span {
+  font-weight: bold;
+  color: hsl(238, 40%, 52%);
+}
+
+.body p {
+  line-height: 1.5;
+  color: hsl(211, 10%, 45%);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.profile span {
+  color: hsl(212, 24%, 26%);
+  font-weight: bold;
+}
+
+.profile .you {
+  background-color: hsl(238, 40%, 52%);
+  padding: 0 0.4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.scores {
+  background-color: hsl(228, 33%, 97%);
+  width: 25%;
+  border-radius: 10px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.scores p {
+  font-size: 1rem;
+  color: hsl(238, 40%, 52%);
+  font-weight: bold;
+}
+
+.scores button {
+  font-size: 1.5rem;
+  color: hsl(211, 10%, 45%);
+}
+
+.mobile {
+  display: flex;
+  gap: 1rem;
+}
+
+.desktop {
+  display: none;
+}
+
+.desktop button,
+.mobile button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.reply,
+.edit {
+  color: hsl(238, 40%, 52%);
+}
+
+.delete {
+  color: hsl(358, 79%, 66%);
+}
+
+.btm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.replies {
+  margin-top: 1rem;
+}
+
+.replyList {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .body {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .scores {
+    display: grid;
+    justify-items: center;
+    width: 55px;
+  }
+
+  .comment {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(10% 90%);
+  }
+}
